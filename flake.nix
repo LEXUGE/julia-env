@@ -81,8 +81,13 @@
               help = "Format nix and shell files";
             }
             {
+              name = "pluto";
+              command = self.apps.${system}.pluto.program;
+              help = "Launch Pluto";
+            }
+            {
               name = "jlfmt";
-              command = self.apps.${system}.fmt.program;
+              command = self.apps.${system}.jlfmt.program;
               help = "Format Julia codes";
             }
           ];
