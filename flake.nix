@@ -2,7 +2,7 @@
   description = "Nix Flake for Julia Environment";
 
   inputs = {
-    nixpkgs-julia.url = "github:NixOS/nixpkgs/?ref=refs/pull/225513/head";
+    nixpkgs-julia.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     systems.url = "github:nix-systems/x86_64-linux";
     utils.url = "github:numtide/flake-utils";
