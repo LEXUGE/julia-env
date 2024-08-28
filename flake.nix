@@ -16,7 +16,7 @@
       pkgs = import nixpkgs { inherit system; overlays = [ devshell.overlays.default ]; };
       l = pkgs.lib // builtins;
 
-      julia = nixpkgs-julia.legacyPackages.${system}.julia_19;
+      julia = nixpkgs-julia.legacyPackages.${system}.julia-bin;
       # pluto manages environment for each notebook independently, so there is no need to include `Plots` here.
       plutoEnv = (julia.withPackages
         [
